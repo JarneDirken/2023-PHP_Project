@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body {
+    scroll-behavior: smooth;
+}
+
+header {
+    background-image: linear-gradient(to right, #B2F884, #6FD9BA);
+}
+
+ion-icon{
+    display: block;
+    pointer-events: none;
+}
+
+.go-top {
+    position: fixed;
+    width: 60px;
+    bottom: 0;
+    right: 15px;
+    background-color: #B2F884;
+    color: white;
+    font-size: 2rem;
+    padding: 14px;
+    border-radius: 4px;
+    box-shadow: -3px 3px 15px #6FD971;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.15s ease;
+}
+
+.go-top.active {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(-15px);
+}
